@@ -6,6 +6,8 @@ class AddPosts < ActiveRecord::Migration
       t.string :title
       t.string :image
       t.string :caption
+      t.string :slug
+      t.boolean :public
       
       t.timestamps
     end
