@@ -1,6 +1,6 @@
 class AddCategoriesPosts < ActiveRecord::Migration
   def self.up
-    create_Table :categories_posts do |t|
+    create_table :categories_posts do |t|
       t.references :post
       t.references :category
       
