@@ -15,8 +15,6 @@ ActiveRecord::Schema.define(:version => 20110121004640) do
   create_table "posts", :force => true do |t|
     t.text     "body"
     t.string   "title"
-    t.string   "image"
-    t.string   "caption"
     t.string   "slug"
     t.boolean  "public"
     t.datetime "created_at"

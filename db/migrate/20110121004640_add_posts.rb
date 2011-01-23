@@ -4,8 +4,6 @@ class AddPosts < ActiveRecord::Migration
       t.primary_key :id
       t.text :body
       t.string :title
-      t.string :image
-      t.string :caption
       t.string :slug
       t.boolean :public
       
