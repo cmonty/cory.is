@@ -4,6 +4,8 @@ class AddPhotos < ActiveRecord::Migration
       t.references :post
       t.string :path
       t.string :caption
+      t.integer :width
+      t.integer :height
       
       t.timestamps
     end
