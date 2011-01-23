@@ -3,7 +3,7 @@ class AddCategories < ActiveRecord::Migration
     create_table :categories do |t|
       t.string :title
       t.string :slug
-      t.string :category_type
+      t.string :type
 
       t.timestamps
     end  
