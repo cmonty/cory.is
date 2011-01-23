@@ -25,7 +25,7 @@ test:
   database: cory_test
   pool: 5
   username: root
-  password:
+  password: root
   host: localhost
 
 production:
