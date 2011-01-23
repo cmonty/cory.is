@@ -1,8 +1,7 @@
 class AddPhotos < ActiveRecord::Migration
   def self.up
     create_table :photos do |t|
-      t.primary_key :id
-      t.integer :post_id
+      t.references :post
       t.string :path
       t.string :caption
       
