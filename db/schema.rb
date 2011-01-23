@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110121004640) do
+ActiveRecord::Schema.define(:version => 20110123135445) do
+
+  create_table "photos", :force => true do |t|
+    t.integer  "post_id"
+    t.string   "path"
+    t.string   "caption"
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.text     "body"
