@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110123144627) do
+ActiveRecord::Schema.define(:version => 20110123164226) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -42,6 +42,14 @@ ActiveRecord::Schema.define(:version => 20110123144627) do
     t.string   "title"
     t.string   "slug"
     t.boolean  "public"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
