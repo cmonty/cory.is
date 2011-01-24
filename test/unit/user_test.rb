@@ -8,5 +8,6 @@ class UserTest < ActiveSupport::TestCase
                     :new_password => 'unlock2',
                     :new_password_confirmation => 'unlock2'
     assert user.save
+    assert user.password.length == 128
   end
 end
