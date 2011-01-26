@@ -9,6 +9,15 @@ class User < ActiveRecord::Base
   def hash_password
     time = Time.now.to_s
     self.password = Digest::SHA512.hexdigest("#{@new_password}:#{time}")
+  end
+  
+  def self.authenticate(email, password)
+    user = find_by_email(email)
+    if(user.password == Digest::SHA512.hexdigest("#{password}:#{user.created_at}"))
+      user
+    else
+      nil
+    end
   end 
 
 end
