@@ -1,5 +1,11 @@
 <%= form_for :session, :url => { :action => "create"} do |f| %>
-	<%= f.text_field :email %>
-	<%= f.password_field :password %>
+	<fieldset>
+		<dl>
+			<dt><%= f.label :email, "Email" %></dt>
+			<dd><%= f.text_field :email %></dd>
+			<dt><%= f.label :password, "Password" %></dt>
+			<dd><%= f.password_field :password %></dd>
+		</dl>
+	</fieldset>
 	<%= submit_tag "Login" %>
 <% end %>
