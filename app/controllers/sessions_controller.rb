@@ -5,10 +5,10 @@ class SessionsController < ApplicationController
   end
   
   def create
-    if user = User.authenticate(params[:email], params[:password])
+    if user = User.authenticate(params['sessions'][:email], params['sessions'][:password])
       session[:current_user_id] = user.id
-      redirect_to root_url
     end
+    redirect_to :action => "new"
   end
   
 end
