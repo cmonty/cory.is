@@ -14,14 +14,14 @@ class User < ActiveRecord::Base
   def self.authenticate(email, password)
     if user = find_by_email(email)
       if user.authenticated?(password)
-        user
+        return user
       end
     end
     
     nil
   end
   
-  def self.authenticated?(password)
+  def authenticated?(password)
     self.password == Digest::SHA512.hexdigest("#{password}:#{self.created_at}")
   end 
 
