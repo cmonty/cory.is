@@ -12,12 +12,17 @@ class User < ActiveRecord::Base
   end
   
   def self.authenticate(email, password)
-    user = find_by_email(email)
-    if(user.password == Digest::SHA512.hexdigest("#{password}:#{user.created_at}"))
-      user
-    else
-      nil
+    if user = find_by_email(email)
+      if user.authenticated?(password)
+        user
+      end
     end
+    
+    nil
+  end
+  
+  def self.authenticated?(password)
+    self.password == Digest::SHA512.hexdigest("#{password}:#{self.created_at}")
   end 
 
 end
