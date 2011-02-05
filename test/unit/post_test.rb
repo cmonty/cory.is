@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class PostTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
+
   test "should not create post without body" do
     post = Post.new :title => "Hello World" 
     assert !post.save, "Created post without body"
