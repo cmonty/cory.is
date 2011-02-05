@@ -57,4 +57,5 @@ Cory::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
   
   resources :sessions
+  resources :posts
 end
