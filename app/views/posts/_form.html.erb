@@ -8,5 +8,13 @@
 			<dd><%= f.text_area :body %></dd>
 		</dl>
 	</fieldset>
+	<fieldset>
+		<%= f.fields_for :photo do |photo| %>
+		<dl>
+			<dt><%= photo.label :path, "File" %></dt>
+			<dd><%= photo.file_field :path %></dd>
+		</dl>
+		<% end %>
+	</fieldset>
 	<%= f.submit %>	
 <% end %>
