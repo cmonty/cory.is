@@ -1,4 +1,5 @@
 <%= form_for @post do |f| %>
+	<%= render "shared/form_errors", :object => @post %>
 	<fieldset>
 		<dl>
 			<dt><%= f.label :title, "Title" %></dt>
