@@ -1,10 +1,10 @@
-<% form_for @post, :url => {:action => "create"} do |f| %>
+<%= form_for @post, :url => {:action => "create"} do |f| %>
 	<fieldset>
 		<dl>
-			<dt><% f.label :title, "Title" %></dt>
-			<dd><% f.text_field :title %></dd>
-			<dt><% f.label :body, "Body" %></dt>
-			<dd><% f.text_area :body %></dd>
+			<dt><%= f.label :title, "Title" %></dt>
+			<dd><%= f.text_field :title %></dd>
+			<dt><%= f.label :body, "Body" %></dt>
+			<dd><%= f.text_area :body %></dd>
 		</dl>
 	</fieldset>	
 <% end %>
