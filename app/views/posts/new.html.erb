@@ -1,4 +1,4 @@
-<%= form_for @post, :url => {:action => "create"} do |f| %>
+<%= form_for @post do |f| %>
 	<fieldset>
 		<dl>
 			<dt><%= f.label :title, "Title" %></dt>
@@ -6,5 +6,6 @@
 			<dt><%= f.label :body, "Body" %></dt>
 			<dd><%= f.text_area :body %></dd>
 		</dl>
-	</fieldset>	
+	</fieldset>
+	<%= f.submit %>	
 <% end %>
