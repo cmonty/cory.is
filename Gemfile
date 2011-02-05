@@ -30,4 +30,6 @@ gem 'capistrano'
 #   gem 'webrat'
 # end
 
+# Added on Gems
 gem 'jquery-rails'
+gem "paperclip", "~> 2.3"
