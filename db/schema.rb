@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110123164226) do
+ActiveRecord::Schema.define(:version => 20110206023331) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -23,16 +23,6 @@ ActiveRecord::Schema.define(:version => 20110123164226) do
   create_table "categories_posts", :force => true do |t|
     t.integer  "post_id"
     t.integer  "category_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "photos", :force => true do |t|
-    t.integer  "post_id"
-    t.string   "path"
-    t.string   "caption"
-    t.integer  "width"
-    t.integer  "height"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
