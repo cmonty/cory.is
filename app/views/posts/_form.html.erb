@@ -10,5 +10,15 @@
 			<dd><%= f.file_field :photo %></dd>
 		</dl>
 	</fieldset>
+	<fieldset>
+		<%= fields_for @post.categories.build do |category| %>
+		<dl>
+			<dt><%= category.label :title, "Category" %></dt>
+			<dd><%= category.text_field :title %></dd>
+			<dt><%= category.label :type, "Type" %></dt>
+			<dd><%= category.text_field :type %></dd>
+		</dl>
+		<% end %>
+	</fieldset>
 	<%= f.submit %>	
 <% end %>
