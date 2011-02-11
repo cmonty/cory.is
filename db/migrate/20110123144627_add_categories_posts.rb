@@ -1,10 +1,7 @@
 class AddCategoriesPosts < ActiveRecord::Migration
   def self.up
-    create_table :categories_posts do |t|
-      t.references :post
-      t.references :category
-      
-      t.timestamps
+    create_table :categories_posts, :id => false do |t|
+      t.references :post, :category
     end
   end
 
