@@ -14,8 +14,8 @@ class CategoryTest < ActiveSupport::TestCase
   
   test "should create category" do 
     category = Category.new :title => 'Developer',
-                            :type => 'job'
-    puts category.type
+                            :style => 'job'
+    
     assert category.save, "Failed to create category"
   end
   

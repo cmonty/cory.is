@@ -6,7 +6,7 @@
 #
 developer:
     title: Developer
-    type: Job
+    style: Skill
 # column: value
 #
 two: {}

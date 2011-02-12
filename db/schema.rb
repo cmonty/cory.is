@@ -10,17 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110206023520) do
+ActiveRecord::Schema.define(:version => 20110212011350) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
     t.string   "slug"
-    t.string   "type"
+    t.string   "style"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "categories_posts", :force => true, :id => false do |t|
+  create_table "categories_posts", :id => false, :force => true do |t|
     t.integer  "post_id"
     t.integer  "category_id"
     t.datetime "created_at"
