@@ -4,6 +4,6 @@ class AddCategoryIdPosts < ActiveRecord::Migration
   end
 
   def self.down
-    drop_column :posts, :category_id
+    remove_column :posts, :category_id
   end
 end
