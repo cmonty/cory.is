@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class CategoryTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
+
   test "shouldn't save category without title" do
     category = Category.new :type => 'interest'
     assert !category.save, "Created category without title"
@@ -15,6 +15,8 @@ class CategoryTest < ActiveSupport::TestCase
   test "should create category" do 
     category = Category.new :title => 'Developer',
                             :type => 'job'
+    puts category.type
     assert category.save, "Failed to create category"
   end
+  
 end
