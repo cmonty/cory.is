@@ -9,4 +9,4 @@
 User.create(:name => 'Cory Monty', 
             :email => 'hi@cory.is')
             
-Type.create([{:name => 'Skill', :slug => "skills"}, {:name => "Interest", :slug => "interests"}])
+Category.create([{:title => 'Skill', :slug => "skills"}, {:title => "Interest", :slug => "interests"}])

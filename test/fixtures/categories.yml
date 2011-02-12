@@ -1,4 +1,4 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Read about fixtures at    
 
 # This model initially had no columns defined.  If you add columns to the
 # model remove the '{}' from the fixture names and add the columns immediately
@@ -6,8 +6,6 @@
 #
 developer:
     title: Developer
-    style: Skill
-# column: value
-#
-two: {}
-#  column: value
+
+job:
+    title: Job
