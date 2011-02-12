@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(:version => 20110212153854) do
   create_table "categories", :force => true do |t|
     t.string   "title"
     t.string   "slug"
-    t.string   "style"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "type_id"
