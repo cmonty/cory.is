@@ -11,10 +11,10 @@
 		</dl>
 	</fieldset>
 	<fieldset>
-		<%= f.fields_for :categories do |category| %>
+		<%= f.fields_for :category do |c| %>
 		<dl>
-			<dt><%= category.label :title, "Category" %></dt>
-			<dd><%= category.text_field :title %></dd>
+			<dt><%= c.label :title, "Category" %></dt>
+			<dd><%= c.text_field :title %></dd>
 		</dl>
 		<% end %>
 	</fieldset>
