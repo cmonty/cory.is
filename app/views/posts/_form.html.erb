@@ -11,7 +11,7 @@
 		</dl>
 	</fieldset>
 	<fieldset>
-		<%= fields_for @post.categories.build do |category| %>
+		<%= f.fields_for :categories do |category| %>
 		<dl>
 			<dt><%= category.label :title, "Category" %></dt>
 			<dd><%= category.text_field :title %></dd>
