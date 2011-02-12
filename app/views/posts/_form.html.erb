@@ -8,15 +8,9 @@
 			<dd><%= f.text_area :body %></dd>
 			<dt><%= f.label :photo, "Image" %></dt>
 			<dd><%= f.file_field :photo %></dd>
+			<dt><%= f.label :category_id, "Category" %></dt>
+			<dd><%= f.collection_select(:category_id, Category.all, :id, :title) %></dd>
 		</dl>
-	</fieldset>
-	<fieldset>
-		<%= f.fields_for :category do |c| %>
-		<dl>
-			<dt><%= c.label :title, "Category" %></dt>
-			<dd><%= c.text_field :title %></dd>
-		</dl>
-		<% end %>
 	</fieldset>
 	<%= f.submit %>	
 <% end %>
