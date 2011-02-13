@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.all
+    @post = Post.find(:last)
   end
   
   def new
     @post = Post.new
+    @post.tags.build
   end
   
   def create

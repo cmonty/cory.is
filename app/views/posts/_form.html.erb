@@ -4,6 +4,10 @@
 		<dl>
 			<dt><%= f.label :title, "Title" %></dt>
 			<dd><%= f.text_field :title %></dd>
+			<dt>
+				<%= f.check_box :public %>
+				<%= f.label :public, "Public Post" %>
+			</dt>
 			<dt><%= f.label :body, "Body" %></dt>
 			<dd><%= f.text_area :body %></dd>
 			<dt><%= f.label :photo, "Image" %></dt>
@@ -14,7 +18,7 @@
 	</fieldset>
 	<fieldset>
 		<dl>
-			<%= f.fields_for @post.tags.build do |t| %>
+			<%= f.fields_for :tags do |t| %>
 				<dt><%= t.label :name, "Tag" %></dt>
 				<dd><%= t.text_field :name %></dd>
 			<% end %>
