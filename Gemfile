@@ -33,3 +33,4 @@ gem 'capistrano'
 # Added on Gems
 gem 'jquery-rails'
 gem "paperclip", "~> 2.3"
+gem "friendly_id", "~> 3.2.1"
