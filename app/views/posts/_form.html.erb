@@ -12,5 +12,13 @@
 			<dd><%= f.collection_select(:category_id, Category.all, :id, :title) %></dd>
 		</dl>
 	</fieldset>
+	<fieldset>
+		<dl>
+			<%= f.fields_for @post.tags.build do |t| %>
+				<dt><%= t.label :name, "Tag" %></dt>
+				<dd><%= t.text_field :name %></dd>
+			<% end %>
+		</dl>
+	</fieldset>
 	<%= f.submit %>	
 <% end %>
