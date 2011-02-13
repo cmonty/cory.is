@@ -12,6 +12,13 @@ class PostTest < ActiveSupport::TestCase
     assert !post.save, "Created post without title"
   end
   
+  test "should create post with category" do
+    post = Post.new :title => "Hellow World!",
+                    :body => "Mustache guy",
+                    :category => categories(:job)
+    assert post.save, "Failed to create post with category"
+  end
+  
   test "should create post" do
     post = Post.new :title => "Hello World!",
                     :body => "Mustache guy"
