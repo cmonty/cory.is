@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(:version => 20110212201836) do
   end
 
   create_table "posts_tags", :id => false, :force => true do |t|
-    t.integer  "posts_id"
-    t.integer  "tags_id"
+    t.integer  "post_id"
+    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

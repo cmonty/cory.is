@@ -1,7 +1,7 @@
 class CreatePostsTags < ActiveRecord::Migration
   def self.up
     create_table :posts_tags, :id => false do |t|
-      t.references :posts, :tags
+      t.references :post, :tag
       
       t.timestamps
     end

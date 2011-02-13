@@ -26,6 +26,7 @@ class PostsController < ApplicationController
   
   def edit
     @post = Post.find(params[:id])
+    @post.tags.build if @post.tags.empty?
   end
   
   def update
