@@ -3,5 +3,5 @@
 		<h1><%= @post.title %></h1>
 		<time datetime="<%= @post.created_at %>" pubdate><%= @post.created_at %></time>
 	</header>
-	<%= @post.body.html_safe %>
+	<%= sanitize @post.body %>
 </article>
