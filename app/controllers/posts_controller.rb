@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
+  require 'rdiscount'
   
   def index
     @post = Post.find(:last)
+    @post.body = Markdown.new(@post.body).to_html
   end
   
   def new
