@@ -1,0 +1,10 @@
+.hentry  h1 {
+	font-family: "news-gothic-std-1","news-gothic-std-2";
+	font-weight:bold;
+	font-size: 24px;
+}
+
+#page {
+	width:960px;
+	margin:0 auto;
+}
