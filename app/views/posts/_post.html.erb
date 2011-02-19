@@ -18,8 +18,8 @@
 				<% end %>
 			</p>
 		<% end %>
-		<p><%= link_to "Previous", @post.prev %></p>
-		<p><%= link_to "Next", @post.next %></p>
+		<p><%= link_to_unless_current "Previous", @post.prev %></p>
+		<p><%= link_to_unless_current "Next", @post.next %></p>
 		<p class="source-org vcard copyright">
 			&copy; <span>Cory Monty</span>
 		</p>
