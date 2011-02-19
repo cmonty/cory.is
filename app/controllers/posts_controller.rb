@@ -24,6 +24,7 @@ class PostsController < ApplicationController
   
   def show
     @post = Post.find(params[:id])
+    @post.body = Markdown.new(@post.body).to_html
   end
   
   def edit
