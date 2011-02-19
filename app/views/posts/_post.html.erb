@@ -1,0 +1,25 @@
+<article class="hentry">
+	<header>
+		<h1 class="entry-title instapaper_title"><%= @post.title %></h1>
+		<time datetime="<%= @post.created_at %>" class="updated" pubdate><%= @post.created_at %></time>
+	</header>
+	<p class="byline author vcard">
+		
+	</p>
+	<section class="entry-content instapaper_body">
+		<%= sanitize @post.body %>
+	</section>
+	
+	<footer>
+		<% if (@post.category.title == 'Skill') %>
+			<p>Cory is a
+				<% @post.tags.each do |t| %>
+					<%= t.name %>
+				<% end %>
+			</p>
+		<% end %>
+		<p class="source-org vcard copyright">
+			&copy; <span>Cory Monty</span>
+		</p>
+	</footer>
+</article>

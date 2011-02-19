@@ -1,7 +1,1 @@
-<article>
-	<header>
-		<h1><%= @post.title %></h1>
-		<time datetime="<%= @post.created_at %>" pubdate><%= @post.created_at %></time>
-	</header>
-	<%= sanitize @post.body %>
-</article>
+<%= render :partial => "post" %>
