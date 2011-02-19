@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
   accepts_nested_attributes_for :category, :tags, :reject_if => :all_blank
   
   has_attached_file :photo
-  has_friendly_id :title, :use_slug => true
+  has_friendly_id :title, :use_slug => true, :scope => :category
   
   def next
     self.class.find :first, 
