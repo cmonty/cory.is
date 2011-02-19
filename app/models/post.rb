@@ -15,5 +15,11 @@ class Post < ActiveRecord::Base
                     :conditions => ["created_at < ?", self.created_at],
                     :order => "created_at DESC"
   end
+  
+  def prev
+    self.class.find :first,
+                    :conditions => ["created_at > ?", self.created_at],
+                    :order => "created_at ASC"
+  end
     
 end
