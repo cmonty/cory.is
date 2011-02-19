@@ -58,4 +58,5 @@ Cory::Application.routes.draw do
   
   resources :sessions
   resources :posts
+  root :to => "posts#index"
 end
