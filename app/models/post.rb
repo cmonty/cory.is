@@ -9,5 +9,11 @@ class Post < ActiveRecord::Base
   
   has_attached_file :photo
   has_friendly_id :title, :use_slug => true
+  
+  def next
+    self.class.find :first, 
+                    :conditions => ["created_at < ?", self.created_at],
+                    :order => "created_at DESC"
+  end
     
 end
