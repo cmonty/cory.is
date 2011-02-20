@@ -1,10 +1,29 @@
-.hentry  h1 {
-	font-family: "news-gothic-std-1","news-gothic-std-2";
-	font-weight:bold;
-	font-size: 24px;
+body {
+  font-family: Helvetica;
 }
+.hentry {
+  padding-top: 28px;
+}
+.hentry h1 {
+  font-family: "news-gothic-std-1", "news-gothic-std-2";
+  font-weight: bold;
+  font-size: 3.5em;
+  /* 10 * 3.5 = 35 px */
 
-#page {
-	width:960px;
-	margin:0 auto;
+}
+.hentry header {
+  margin-bottom: 28px;
+}
+.hentry time {
+  font-size: 1.2em;
+  /* 10 * 1.2 = 12px */
+
+}
+.hentry .entry-content {
+  font-size: 1.8em;
+  /* 10 * 1.8 = 18px */
+
+}
+.hentry .entry-content * {
+  margin-bottom: 28px;
 }

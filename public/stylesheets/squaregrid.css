@@ -1,8 +1,8 @@
 /* BEGIN SQUARE GRID CODE */
-body {background-color:#f4f4f4; font-size:62.5%; line-height:28px; /* for RTL add: 'direction: rtl;' */ }
+body {background-color:white; font-size:62.5%; line-height:28px; }
 
 /* your main wrapping div */
-#wrapper{ margin: 0 auto; position:relative; overflow: hidden; width: 994px;background:#fff url(../images/sg_grid_sub.png) center top repeat; }
+#page{ margin: 0 auto; position:relative; overflow: hidden; width: 994px;background:#fff url(../images/sg_grid_xy.png) center top repeat; }
 #container{width:1008px; /* essential */ margin-left:-7px;}
 
 /* global styling to apply to all columns */
