@@ -23,7 +23,11 @@ class PostsController < ApplicationController
   end
   
   def show
-    @post = Post.find(params[:id])
+    if(params[:id])
+      @post = Post.find(params[:id])
+    else
+      @post = Post.find(:last)
+    end
     @post.body = Markdown.new(@post.body).to_html
   end
   
