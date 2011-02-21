@@ -11,19 +11,47 @@ body {
   /* 10 * 3.5 = 35 px */
 
 }
+.hentry h2,
+.hentry h3,
+.hentry h4,
+.hentry h5,
+.hentry h6 {
+  font-family: "news-gothic-std-1", "news-gothic-std-2";
+}
 .hentry header {
   margin-bottom: 28px;
 }
-.hentry time {
+.hentry header time {
   font-size: 1.2em;
   /* 10 * 1.2 = 12px */
 
+  color: #999;
 }
-.hentry .entry-content {
+.hentry .entry-content p, .hentry .entry-content pre {
+  font-size: 1.6em;
+  /* 10 * 1.6 = 16px */
+
+}
+.hentry .entry-content h1,
+.hentry .entry-content h2,
+.hentry .entry-content h3,
+.hentry .entry-content h4,
+.hentry .entry-content h5,
+.hentry .entry-content h6 {
   font-size: 1.8em;
   /* 10 * 1.8 = 18px */
 
 }
+.hentry .entry-content code {
+  background-color: #EDEAE3;
+  padding: 2px;
+  border: 1px solid #D4CCBD;
+}
 .hentry .entry-content * {
   margin-bottom: 28px;
+}
+.hentry .entry-content p:first-child {
+  font-size: 2em;
+  /* 10 * 2 = 20px */
+
 }
