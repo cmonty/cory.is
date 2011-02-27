@@ -31,6 +31,7 @@ body {
   font-size: 1.6em;
   /* 10 * 1.6 = 16px */
 
+  font-family: "minion-pro-1", "minion-pro-2";
 }
 .hentry .entry-content h1,
 .hentry .entry-content h2,
@@ -38,7 +39,7 @@ body {
 .hentry .entry-content h4,
 .hentry .entry-content h5,
 .hentry .entry-content h6 {
-  font-size: 1.8em;
+  font-size: 2em;
   /* 10 * 1.8 = 18px */
 
 }
