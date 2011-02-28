@@ -97,7 +97,7 @@ DEPENDENCIES
   capistrano
   friendly_id (~> 3.2.1)
   jquery-rails
-  mysql2 (~> 0.2.6)
+  mysql2 (~> 0.2.3)
   paperclip (~> 2.3)
   rails (= 3.0.3)
   rdiscount (~> 1.6.8)
