@@ -28,7 +28,7 @@ body {
   color: #999;
 }
 .hentry .entry-content p, .hentry .entry-content pre {
-  font-size: 1.6em;
+  font-size: 1.8em;
   /* 10 * 1.6 = 16px */
 
   font-family: "minion-pro-1", "minion-pro-2";
@@ -52,7 +52,7 @@ body {
   margin-bottom: 28px;
 }
 .hentry .entry-content p:first-child {
-  font-size: 2em;
-  /* 10 * 2 = 20px */
+  font-size: 2.2em;
+  /* 10 * 2.2 = 22px */
 
 }
