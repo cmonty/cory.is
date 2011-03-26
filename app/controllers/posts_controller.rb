@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  skip_before_filter :require_login, :only => [:show] 
   require 'rdiscount'
   
   def index
