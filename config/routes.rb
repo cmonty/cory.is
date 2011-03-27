@@ -56,7 +56,10 @@ Cory::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
   
-  resources :sessions
+  match 'login' => 'sessions#new', :via => 'GET'
+  match 'sessions' => 'sessions#create', :via => 'POST'
+  match 'logout' => 'sessions#destroy'
+
   resources :posts
   resources :users
   
