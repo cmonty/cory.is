@@ -58,5 +58,7 @@ Cory::Application.routes.draw do
   
   resources :sessions
   resources :posts
+  resources :users
+  
   root :to => "posts#show"
 end

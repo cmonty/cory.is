@@ -8,9 +8,15 @@ class SessionsController < ApplicationController
   def create
     if user = User.authenticate(params[:session][:email], params[:session][:password])
       session[:current_user_id] = user.id
-      redirect_to root_url
+      redirect_to new_post_url
+    else
+      redirect_to :action => "new"
     end
-    redirect_to :action => "new"
+  end
+  
+  def destroy
+    reset_session
+    redirect_to root_url
   end
   
 end
