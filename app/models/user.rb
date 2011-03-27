@@ -23,6 +23,6 @@ class User < ActiveRecord::Base
   
   def authenticated?(password)
     self.password == Digest::SHA512.hexdigest("#{password}:#{self.created_at}")
-  end 
+  end
 
 end
