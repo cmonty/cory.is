@@ -1,6 +1,10 @@
 body {
   font-family: Helvetica;
 }
+#page {
+  background: none;
+  width: 588px;
+}
 .hentry {
   padding-top: 28px;
 }
@@ -29,7 +33,7 @@ body {
 }
 .hentry .entry-content p, .hentry .entry-content pre {
   font-size: 1.8em;
-  /* 10 * 1.6 = 16px */
+  /* 10 * 1.8 = 18px */
 
   font-family: "minion-pro-1", "minion-pro-2";
 }
@@ -40,7 +44,7 @@ body {
 .hentry .entry-content h5,
 .hentry .entry-content h6 {
   font-size: 2em;
-  /* 10 * 1.8 = 18px */
+  /* 10 * 2 = 20px */
 
 }
 .hentry .entry-content code {
@@ -55,4 +59,8 @@ body {
   font-size: 2.2em;
   /* 10 * 2.2 = 22px */
 
+}
+.hentry footer {
+  font-size: 1.8em;
+  font-family: "minion-pro-1", "minion-pro-2";
 }
