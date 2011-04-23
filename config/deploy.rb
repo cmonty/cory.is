@@ -10,6 +10,7 @@ set :copy_strategy, :checkout
 set :keep_releases, 3
 set :use_sudo, false
 set :copy_compression, :bz2
+set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 server "cory.is", :app, :web, :db, :primary => true
