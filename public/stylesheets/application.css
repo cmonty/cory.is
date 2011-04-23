@@ -28,11 +28,13 @@ h6 {
   z-index: 10;
   border-bottom: 1px solid #fdfdfd;
   -webkit-box-shadow: 0px 10px 10px white;
+  -moz-box-shadow: 0px 10px 10px white;
+  box-shadow: 0px 10px 10px white;
 }
 #page header.name h1 {
-  font-size: 3.5em;
-  /* 10 * 3.5 = 35 px */
-
+  font-size: 100px;
+  color: #b0422a;
+  text-shadow: 3px 3px 0px #EEE;
 }
 #frame {
   background: white;
@@ -42,6 +44,8 @@ h6 {
   bottom: 0;
   left: 0;
   -webkit-box-shadow: 0px -10px 10px white;
+  -moz-box-shadow: 0px -10px 10px white;
+  box-shadow: 0px -10px 10px white;
 }
 #container {
   width: 100%;
@@ -58,6 +62,7 @@ h6 {
   font-size: 3.5em;
   /* 10 * 3.5 = 35 px */
 
+  margin-bottom: 7px;
 }
 .hentry header {
   margin-bottom: 28px;

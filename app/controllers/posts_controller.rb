@@ -1,9 +1,10 @@
 class PostsController < ApplicationController
-  skip_before_filter :require_login, :only => [:show] 
+  skip_before_filter :require_login, :only => [:show, :index] 
   require 'rdiscount'
   
   def index
-    @posts = Post.find(:all)
+    #@posts = Post.find(:all)
+    redirect_to root_url
   end
   
   def new
