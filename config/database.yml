@@ -35,5 +35,5 @@ production:
   database: cory_production
   pool: 5
   username: root
-  password:
+  password: baun5ew7c
   host: localhost
