@@ -65,7 +65,10 @@ h6 {
 
   color: #999;
 }
-.hentry .entry-content p, .hentry .entry-content pre {
+.hentry .entry-content {
+  padding-bottom: 28px;
+}
+.hentry .entry-content p, .hentry .entry-content pre, .hentry .entry-content ol {
   font-size: 1.8em;
   /* 10 * 1.8 = 18px */
 
@@ -106,4 +109,20 @@ h6 {
   padding-bottom: 56px;
   border-top: 1px solid #eee;
   padding-top: 28px;
+  position: relative;
+}
+.hentry footer p.next {
+  position: absolute;
+  right: 0;
+  top: 28px;
+}
+.hentry footer p.prev {
+  position: absolute;
+  left: 0;
+  top: 28px;
+}
+.hentry footer p.byline {
+  text-align: center;
+  margin-top: 28px;
+  color: #999;
 }

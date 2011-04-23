@@ -67,7 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 	
 	.entry-content {
 		
-		p, pre {
+		padding-bottom:28px;
+		
+		p, pre, ol {
 			font-size: 1.8em; /* 10 * 1.8 = 18px */
 		}
 		
@@ -105,5 +107,24 @@ h1, h2, h3, h4, h5, h6 {
 		padding-bottom:56px;
 		border-top:1px solid #eee;
 		padding-top:28px;
+		position:relative;
+		
+		p.next {
+			position:absolute;
+			right:0;
+			top:28px;
+		}
+		
+		p.prev {
+			position:absolute;
+			left:0;
+			top:28px;
+		}
+		
+		p.byline {
+			text-align:center;
+			margin-top:28px;
+			color:#999;
+		}	
 	}
 }

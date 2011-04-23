@@ -18,10 +18,10 @@
 				<% end %>
 			</p>
 		<% end %>
-		<p><%= link_to_unless_current "Previous", @post.prev %></p>
-		<p><%= link_to_unless_current "Next", @post.next %></p>
-		<p class="source-org vcard copyright">
-			&copy; <%= Date.today.strftime('%Y') %> <span>Cory Monty</span>
+		<p class="prev"><%= link_to_unless_current "&larr; Previous".html_safe, @post.prev %></p>
+		<p class="next"><%= link_to_unless_current "Next &rarr;".html_safe, @post.next %></p>
+		<p class="byline vcard author">
+			<span>Cory Monty</span>
 		</p>
 	</footer>
 </article>
