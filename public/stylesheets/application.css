@@ -1,6 +1,9 @@
 body {
   font-family: "minion-pro-1", "minion-pro-2";
 }
+a {
+  color: #b0422a;
+}
 h1,
 h2,
 h3,
