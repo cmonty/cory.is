@@ -25,3 +25,6 @@
 		</p>
 	</footer>
 </article>
+<% content_for :title do %>
+	<%= @post.title + " by Cory Monty, Web Craftsman" %>
+<% end %>
