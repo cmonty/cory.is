@@ -129,8 +129,8 @@ h6 {
   left: 0;
   top: 28px;
 }
-.hentry footer p.byline {
+.hentry footer p.today {
   text-align: center;
   margin-top: 28px;
-  color: #999;
+  color: #ddd;
 }
