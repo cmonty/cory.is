@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 set :application, "cory.is"
 set :repository,  "git@github.com:cmonty/Cory.is.git"
 
