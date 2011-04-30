@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 source 'http://gemcutter.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '>= 3.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -35,4 +35,5 @@ gem 'capistrano'
 gem 'jquery-rails'
 gem "paperclip", "~> 2.3"
 gem "friendly_id", "~> 3.2.1"
-gem "rdiscount", "~> 1.6.8"
+# gem "rdiscount", "~> 1.6.8"
+gem "redcarpet"

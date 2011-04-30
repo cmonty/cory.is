@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   skip_before_filter :require_login, :only => [:show, :index] 
-  require 'rdiscount'
   
   def index
     #@posts = Post.find(:all)
@@ -29,7 +28,7 @@ class PostsController < ApplicationController
     else
       @post = Post.find(:last)
     end
-    @post.body = Markdown.new(@post.body).to_html
+    @post.body = Redcarpet.new(@post.body).to_html
   end
   
   def edit
