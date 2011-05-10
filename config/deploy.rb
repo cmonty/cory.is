@@ -21,6 +21,8 @@ set :scm, :git
 
 server "cory.is", :app, :web, :db, :primary => true
 
+after "deploy", "symlinks:db"
+
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
@@ -31,4 +33,10 @@ namespace :deploy do
    task :restart, :roles => :app, :except => { :no_release => true } do
      run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    end
+end
+
+namspace :symlinks do
+  task :db do
+    run "ln -s #{deploy_to}/#{shared_dir}/config/database.yml #{current_release}/config/database.yml"
+  end
 end
