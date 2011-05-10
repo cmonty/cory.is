@@ -35,7 +35,7 @@ namespace :deploy do
    end
 end
 
-namspace :symlinks do
+namespace :symlinks do
   task :db do
     run "ln -s #{deploy_to}/#{shared_dir}/config/database.yml #{current_release}/config/database.yml"
   end
