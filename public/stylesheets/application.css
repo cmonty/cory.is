@@ -32,9 +32,9 @@ h6 {
   box-shadow: 0px 10px 10px white;
 }
 #page header.name h1 {
-  font-size: 100px;
+  font-size: 68px;
   color: #b0422a;
-  text-shadow: 3px 3px 0px #EEE;
+  text-transform: uppercase;
 }
 #frame {
   background: white;
