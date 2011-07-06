@@ -11,13 +11,6 @@
 	</section>
 	
 	<footer>
-		<% if (@post.category.title == 'Skill') %>
-			<p>Cory is a
-				<% @post.tags.each do |t| %>
-					<%= t.name %>
-				<% end %>
-			</p>
-		<% end %>
 		<p class="prev"><%= link_to_unless_current "&larr; Previous".html_safe, @post.prev %></p>
 		<p class="next"><%= link_to_unless_current "Next &rarr;".html_safe, @post.next %></p>
 		<p class="today">
