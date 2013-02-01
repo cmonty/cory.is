@@ -1,4 +1,4 @@
 source :rubygems
 
-gem "middleman"
-gem "rdiscount"
+gem "middleman", "3.0.11"
+gem "rdiscount", "1.6.8"
