@@ -1,27 +1,8 @@
-###
-# Markdown
-###
-
 require "bundler"
 require "rdiscount"
 
-###
-# Compass
-###
-
-# Susy grids in Compass
-# First: gem install susy
-# require 'susy'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
 activate :directory_indexes
+
 set :markdown_engine, :rdiscount
 set :markdown, :layout_engine => :erb
 
@@ -58,30 +39,11 @@ set :markdown, :layout_engine => :erb
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
-# Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :cache_buster
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Compress PNGs after build
-  # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
+  activate :minify_css
+  activate :minify_javascript
+  activate :cache_buster
 end
