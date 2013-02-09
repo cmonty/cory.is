@@ -68,12 +68,7 @@ Column container
   margin: 0;
 }
 
-#main-sidebar {
-  float:right;
-  text-align:right;
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
   .grids {
     margin: 0;
     width: auto;
@@ -83,11 +78,4 @@ Column container
     width: auto;
     margin: 0;
   }
-
-  #main-sidebar {
-    float:none;
-    width:100%;
-    text-align:center;
-  }
-}
 }

@@ -13,10 +13,21 @@ h1 {
   font-size:2.25em;
   color: black;
   text-transform: uppercase;
+  font-family: "news-gothic-std-1","news-gothic-std-2",sans-serif;
+}
+
+
+h4 {
+  font-family: "news-gothic-std-1","news-gothic-std-2",sans-serif;
 }
 
 #page-wrap {
   margin-top:5%;
+}
+
+#main-sidebar {
+  float:right;
+  text-align:right;
 }
 
 #byline span {
@@ -28,9 +39,23 @@ h1 {
 
 #article-wrap {
   padding-left:2em;
+  font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
 }
 
 #bio {
   color:#B0422A;
-  font:0.8em serif;
+  font-size:0.8em;
+  font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+}
+
+@media screen and (max-width: 960px) {
+  #page-wrap {
+    margin-top:1%;
+  }
+
+  #main-sidebar {
+    float:none;
+    width:100%;
+    text-align:center;
+  }
 }
