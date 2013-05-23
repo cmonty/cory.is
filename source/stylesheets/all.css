@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+  height:100%;
+}
+
 body {
   background: white;
   border-top: 0.75em solid black;
@@ -40,12 +44,19 @@ h4 {
 #article-wrap {
   padding-left:2em;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+  font-size:1.2em;
+  color:#333;
 }
 
 #bio {
   color:#B0422A;
   font-size:0.8em;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+}
+
+footer {
+  border-top:1px solid #BBB;
+  margin:0 3em;
 }
 
 @media screen and (max-width: 960px) {
